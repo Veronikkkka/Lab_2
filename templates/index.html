@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Search twitter user</title>
+    <style>
+        body {
+            background: url("1.jpg");
+            font-family: 'Open Sans', sans-serif;
+            /* background-position: left, right; */
+            background-position-x: 99%
+          }
+          
+          .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+          }
+          
+          .searchTerm {
+            width: 100%;
+            border: 3px solid #0d7d8b;
+            border-right: none;
+            padding: 5px;
+            height: 20px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            color: #9DBFAF;
+            font-size: 16px;
+          }
+          
+          .searchTerm:focus {
+            color: #00B4CC;
+          }
+          
+          .searchButton {
+            width: 100px;
+            height: 35px;
+            border: 1px solid #0d7d8b;
+            background: #636df1;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 20px;
+          
+          }
+          
+          .searchButton:focus {
+            background-color: #63f16a;
+          }
+          
+          /*Resize the wrap to see the search bar change!*/
+          .wrap {
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+    </style>
+</head>
+<body style="background-color: #00B4CC;">
+    <form class="wrap" method="post" action="#">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?" name="nick">
+           <button type="submit" class="searchButton">
+             Find
+          </button>
+        </div>
+    </form>
+</body>
+</html>
